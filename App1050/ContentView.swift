@@ -1,15 +1,15 @@
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showSplash = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if showSplash {
+            Splash(showSplash: $showSplash, dc: VMC.shared.dc)
+        } else {
+            Tab()
         }
-        .padding()
     }
 }
 

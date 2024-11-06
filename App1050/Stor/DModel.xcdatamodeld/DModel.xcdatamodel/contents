@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Birthday" representedClassName=".Birthday" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GoalCD" representedClassName=".GoalCD" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Height" representedClassName=".Height" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ImageData" representedClassName=".ImageData" syncable="YES">
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+    </entity>
+    <entity name="Name" representedClassName=".Name" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NoteCD" representedClassName=".NoteCD" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Weight" representedClassName=".Weight" syncable="YES">
+        <attribute name="weight" optional="YES" attributeType="String"/>
+    </entity>
+</model>
