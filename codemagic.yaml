@@ -13,10 +13,10 @@ workflows:
           - certificate_credentials # <-- (CERTIFICATE_PRIVATE_KEY - Put your Certificate Private Key here)
           #- other
         vars:
-          XCODE_PROJECT: "App1045.xcodeproj" # <-- Put the name of your workspace here.
-          XCODE_SCHEME: "App1045" # <-- Put the name of your scheme here.
-          BUNDLE_ID: "com.ser.esp0rtsk4t3s0rte" # <-- Put your Bundle Id here.
-          APP_STORE_APPLE_ID: 6737522499 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
+          XCODE_PROJECT: "App1050.xcodeproj" # <-- Put the name of your workspace here.
+          XCODE_SCHEME: "App1050" # <-- Put the name of your scheme here.
+          BUNDLE_ID: "com.est.r0wp0wpro" # <-- Put your Bundle Id here.
+          APP_STORE_APPLE_ID: 6737809235 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
         xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
         cocoapods: default
       triggering:
