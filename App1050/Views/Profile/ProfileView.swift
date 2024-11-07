@@ -20,33 +20,21 @@ struct ProfileView: View {
                             nameRight
                             , alignment: .trailing
                         )
-                    Text(viewModel.dateToString(viewModel.birthday))
-                        .font(.system(size: 13, weight: .regular))
-                        .foregroundColor(.c038108)
-                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 57))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .frame(height: 50)
-                        .background(Color.white)
-                        .clipShape(.rect(cornerRadius: 15))
-                        .overlay(
-                            ZStack {
-                                Image(systemName: "arrowtriangle.down.fill")
-                                    .font(.system(size: 16, weight: .regular))
-                                    .foregroundColor(.c038108)
-                                    .padding(.trailing, 16)
-                                    .frame(maxWidth: .infinity, alignment: .trailing)
-                                DatePicker(selection: $viewModel.birthday, displayedComponents: .date) {}
-                                                .labelsHidden()
-                                                .contentShape(Rectangle())
-                                                .opacity(0.011)
-                                                .overlay(
-                                                    Color.white
-                                                        .padding(.trailing, 33)
-                                                )
-                                                .frame(maxWidth: .infinity, alignment: .trailing)
-                            }
-                            ,alignment: .trailing
-                        )
+                    
+                    HStack(spacing: 16) {
+                        Text("Birthday")
+                            .font(.system(size: 13, weight: .regular))
+                            .foregroundColor(.c038108)
+                        Spacer()
+                        DatePicker(selection: $viewModel.birthday, displayedComponents: .date) {}
+                                        .labelsHidden()
+                    }
+                    .padding(.horizontal, 16)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(height: 50)
+                    .background(Color.white)
+                    .clipShape(.rect(cornerRadius: 15))
+                    
                     
                     ProfileTextField(text: $viewModel.weight, placeholder: "Weight", trailing: viewModel.isWeightEdited ? 76 : 57)
                         .overlay(

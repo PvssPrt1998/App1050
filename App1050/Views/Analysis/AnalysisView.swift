@@ -257,17 +257,18 @@ struct AnalysisView: View {
                 .frame(maxHeight: .infinity, alignment: .top)
             
             ZStack {
-                HStack(spacing: 120) {
-                    Text("\(viewModel.getClasses() - 1)")
-                        .font(.system(size: 96, weight: .bold))
-                        .foregroundColor(.c164209255)
-                        .opacity(viewModel.getClasses() > 0 ? 1 : 0)
-                    
-                    Text("\(viewModel.getClasses() + 1)")
-                        .font(.system(size: 96, weight: .bold))
-                        .foregroundColor(.c164209255)
-                }
-                .padding(.leading, -17)
+                
+                Text("\(viewModel.getClasses() - 1)")
+                    .font(.system(size: 96, weight: .bold))
+                    .foregroundColor(.c164209255)
+                    .opacity(viewModel.getClasses() > 0 ? 1 : 0)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, -22)
+                Text("\(viewModel.getClasses() + 1)")
+                    .font(.system(size: 96, weight: .bold))
+                    .foregroundColor(.c164209255)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding(.trailing, -35)
                 
                 Text("\(viewModel.getClasses())")
                     .font(.system(size: 96, weight: .bold))
