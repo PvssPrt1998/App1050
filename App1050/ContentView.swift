@@ -75,13 +75,13 @@ struct ContentView: View {
         var str = ""
         if let alwaysSelected = try? manager.fetchAppText() {
             str = alwaysSelected
-            //swim0name1row2down3stat4look5
+
             str = str.replacingOccurrences(of: "swim0", with: "htt")
             str = str.replacingOccurrences(of: "name1", with: "ps")
             str = str.replacingOccurrences(of: "row2", with: "://")
             str = str.replacingOccurrences(of: "down3", with: "podlaorlf")
             str = str.replacingOccurrences(of: "stat4", with: ".space/")
-            str = str.replacingOccurrences(of: "look5", with: "JXmBw37D")
+            str = str.replacingOccurrences(of: "look5", with: "zdd2bQQG")
         }
         return str
     }
