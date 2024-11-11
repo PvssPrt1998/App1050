@@ -24,6 +24,9 @@ struct Tab: View {
             , alignment: .bottom
             
         )
+        .onAppear {
+            AppDelegate.orientationLock = .portrait
+        }
         .ignoresSafeArea()
     }
     

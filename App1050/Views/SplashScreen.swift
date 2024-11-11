@@ -11,11 +11,12 @@ struct Splash: View {
             Image("SplashBackground")
                 .resizable()
                 .ignoresSafeArea()
-            VStack(spacing: 144) {
+            VStack(spacing: 0) {
                 Image("SplashLogo")
                     .resizable()
                     .scaledToFit()
                     .padding(.horizontal, 43)
+                Rectangle().fill(.clear).frame(maxHeight: 144)
                 VStack(spacing: 38) {
                     ZStack {
                         Circle()

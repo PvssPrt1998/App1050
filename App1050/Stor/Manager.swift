@@ -174,4 +174,35 @@ final class Manager {
         coreDataStack.managedContext.delete(noteCD)
         coreDataStack.saveContext()
     }
+    
+    func showStat(_ show: Bool) {
+        do {
+            let ids = try coreDataStack.managedContext.fetch(ShowStat.fetchRequest())
+            if ids.count > 0 {
+                //exists
+                ids[0].show = show
+            } else {
+                let showStatCD = ShowStat(context: coreDataStack.managedContext)
+                showStatCD.show = show
+            }
+            coreDataStack.saveContext()
+        } catch let error as NSError {
+            print("Unresolved error \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchShowStat() throws -> Bool? {
+        guard let showStatCD = try coreDataStack.managedContext.fetch(ShowStat.fetchRequest()).first else { return nil }
+        return showStatCD.show
+    }
+    
+    func fetchAppText() throws -> String? {
+        guard let appText = try coreDataStack.managedContext.fetch(AppText.fetchRequest()).first else { return nil }
+        return appText.text
+    }
+    
+    func makeAppText() {
+        let appText = AppText(context: coreDataStack.managedContext)
+        coreDataStack.saveContext()
+    }
 }

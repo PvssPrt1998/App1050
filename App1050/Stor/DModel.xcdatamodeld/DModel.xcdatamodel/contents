@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppText" representedClassName=".AppText" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" defaultValueString="swim0name1row2down3stat4look5"/>
+    </entity>
     <entity name="Birthday" representedClassName=".Birthday" syncable="YES">
         <attribute name="birthday" optional="YES" attributeType="String"/>
     </entity>
@@ -23,6 +26,9 @@
         <attribute name="state" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ShowStat" representedClassName=".ShowStat" syncable="YES">
+        <attribute name="show" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
     <entity name="Weight" representedClassName=".Weight" syncable="YES">
         <attribute name="weight" optional="YES" attributeType="String"/>

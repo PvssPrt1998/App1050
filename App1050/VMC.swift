@@ -1,9 +1,10 @@
-import Foundation
+import SwiftUI
 
 final class VMC {
     
     let dc: DC = DC()
-    
+    var preferredShow = false
+    @AppStorage("statLine") var statLine = ""
     private var noteViewModel: NoteViewModel?
     private var profileViewModel: ProfileViewModel?
     

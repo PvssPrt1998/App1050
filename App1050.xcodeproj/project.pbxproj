@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99C57B062CE2067E00FC44BA /* ShowStat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57B022CE2067E00FC44BA /* ShowStat+CoreDataClass.swift */; };
+		99C57B072CE2067E00FC44BA /* ShowStat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57B032CE2067E00FC44BA /* ShowStat+CoreDataProperties.swift */; };
+		99C57B0A2CE2074700FC44BA /* AppText+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57B082CE2074700FC44BA /* AppText+CoreDataClass.swift */; };
+		99C57B0B2CE2074700FC44BA /* AppText+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C57B092CE2074700FC44BA /* AppText+CoreDataProperties.swift */; };
 		99F1A17A2CD9115700F6036B /* App1050App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A1792CD9115700F6036B /* App1050App.swift */; };
 		99F1A17C2CD9115700F6036B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F1A17B2CD9115700F6036B /* ContentView.swift */; };
 		99F1A17E2CD9115900F6036B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F1A17D2CD9115900F6036B /* Assets.xcassets */; };
@@ -52,6 +56,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99C57B022CE2067E00FC44BA /* ShowStat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowStat+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99C57B032CE2067E00FC44BA /* ShowStat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowStat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99C57B082CE2074700FC44BA /* AppText+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppText+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99C57B092CE2074700FC44BA /* AppText+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppText+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		99F1A1762CD9115700F6036B /* App1050.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1050.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F1A1792CD9115700F6036B /* App1050App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App1050App.swift; sourceTree = "<group>"; };
 		99F1A17B2CD9115700F6036B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -235,6 +243,10 @@
 		99F1A1BC2CDB340300F6036B /* Subs */ = {
 			isa = PBXGroup;
 			children = (
+				99C57B082CE2074700FC44BA /* AppText+CoreDataClass.swift */,
+				99C57B092CE2074700FC44BA /* AppText+CoreDataProperties.swift */,
+				99C57B022CE2067E00FC44BA /* ShowStat+CoreDataClass.swift */,
+				99C57B032CE2067E00FC44BA /* ShowStat+CoreDataProperties.swift */,
 				99F1A1BD2CDB341900F6036B /* NoteCD+CoreDataClass.swift */,
 				99F1A1BE2CDB341900F6036B /* NoteCD+CoreDataProperties.swift */,
 				99F1A1BF2CDB341900F6036B /* ImageData+CoreDataClass.swift */,
@@ -331,6 +343,8 @@
 				99F1A18D2CD9124500F6036B /* SplashScreen.swift in Sources */,
 				99F1A1A72CDAF83F00F6036B /* NoteCard.swift in Sources */,
 				99F1A1972CD91F2D00F6036B /* NoteView.swift in Sources */,
+				99C57B0A2CE2074700FC44BA /* AppText+CoreDataClass.swift in Sources */,
+				99C57B0B2CE2074700FC44BA /* AppText+CoreDataProperties.swift in Sources */,
 				99F1A17C2CD9115700F6036B /* ContentView.swift in Sources */,
 				99F1A1A02CDA2FF100F6036B /* NewGoalView.swift in Sources */,
 				99F1A1A92CDAF9F800F6036B /* GoalCard.swift in Sources */,
@@ -341,6 +355,8 @@
 				99F1A1AD2CDB150700F6036B /* ProfileView.swift in Sources */,
 				99F1A18F2CD9125600F6036B /* Tab.swift in Sources */,
 				99F1A18A2CD9122800F6036B /* VMC.swift in Sources */,
+				99C57B062CE2067E00FC44BA /* ShowStat+CoreDataClass.swift in Sources */,
+				99C57B072CE2067E00FC44BA /* ShowStat+CoreDataProperties.swift in Sources */,
 				99F1A19C2CD94B4000F6036B /* Goal.swift in Sources */,
 				99F1A1AB2CDB14E500F6036B /* ProfileViewModel.swift in Sources */,
 				99F1A1A22CDA44BE00F6036B /* NewNoteView.swift in Sources */,
@@ -498,11 +514,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1050/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ultimate Rowing Comparison";
+				INFOPLIST_KEY_CFBundleDisplayName = "1xbεt:ѕρσrt ultimate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,11 +548,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1050/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ultimate Rowing Comparison";
+				INFOPLIST_KEY_CFBundleDisplayName = "1xbεt:ѕρσrt ultimate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -586,7 +602,6 @@
 				99F1A1B62CDB32AD00F6036B /* DModel.xcdatamodel */,
 			);
 			currentVersion = 99F1A1B62CDB32AD00F6036B /* DModel.xcdatamodel */;
-			name = DModel.xcdatamodeld;
 			path = DModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
