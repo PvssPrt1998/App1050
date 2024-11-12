@@ -31,7 +31,7 @@ struct ContentView: View {
             configured = false
         }
         
-        guard let plate = stringToDate("12.11.2024"), daCheckCat(ate: plate) else {
+        guard let plate = stringToDate("13.11.2024"), daCheckCat(ate: plate) else {
             return tabSelection()
         }
         
